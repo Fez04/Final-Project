@@ -1,0 +1,242 @@
+/** Start Nav Styles **/
+
+nav {
+  width: 100%;
+  height: 80px;
+  background-image: url(/images/light-red-wallpaper.jpg);
+  line-height: 80px;
+}
+nav ul {
+  float: right;
+  margin-right: 30px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.8s all;
+}
+
+nav ul li:hover {
+  background-color: gold;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #d3d3d3;
+  padding: 30px;
+}
+.logo {
+  height: 75px;
+  padding-top: 3px;
+}
+/** End Nav Styles **/
+
+/** Start bio style **/
+
+.mainbio {
+  width: 100%;
+  height: 600px;
+  background-image: url(/images/black-background.jpg);
+  background-size: cover;
+}
+
+.about-container {
+  padding: 15px;
+  background-color: black;
+  color: #072529;
+}
+
+.container {
+  background-color: #072529;
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.boxs {
+  background-color: lightblue;
+  height: 150px;
+  width: 590px;
+  border: 1px solid #000000;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 10px;
+  margin-right: 40px;
+  margin-bottom: 15px;
+  margin-left: 40px;
+  float: left;
+}
+
+.about-pic {
+  width: 45%;
+  text-align: center;
+  float: left;
+  margin-left: 2%;
+  margin-top: 10px;
+  color: white;
+}
+
+.bio {
+  padding-top:15px;
+  width: 50%;
+  border: 1px solid #000000;
+  text-align: center;
+  float: right;
+  margin-right: 2%;
+  background-color: black;
+  color: black;
+  opacity: 0.6;
+}
+/** End bio style **/
+
+/** START OF PHOTOS **/
+.photos {
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/black-background.jpg);
+  background-size: cover;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+body,
+figure {
+  margin: 0;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery {
+  width: 100%;
+  overflow: hidden;
+}
+figure.slider {
+  position: relative;
+  width: 500%;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+figure.slider figure {
+  width: 20%;
+  height: auto;
+  display: inline-block;
+  position: inherit;
+}
+figure.slider img {
+  width: 1000px;
+  height: auto;
+  margin-left: 25%;
+}
+figure.slider figure figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 100%;
+  font-size: 2rem;
+  padding: 0.6rem;
+  margin-left: 25%;
+}
+
+/** END OF PHOTOS **/
+
+/** Start Footer Styles **/
+.main-footer {
+  border-top: 1px solid #000000;
+  background-image: url(/images/light-red-wallpaper.jpg);
+  background-size: auto;
+}
+
+.main-footer:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.footer-section {
+  width: 33%;
+  height: 165px;
+  float: left;
+  padding: 15px 0px;
+  border-left: 1px solid #000000;
+  text-align: center;
+  color: gold;
+}
+
+.section {
+  height: 50px;
+  width: 150px;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.social-media a {
+  height: 50px;
+  width: 50px;
+  color: gold;
+}
+
+.a {
+  height: 100%;
+  width: 50px;
+  text-align: center;
+  margin-left: calc(100%/3);
+  background: radial-gradient(#fff, red);
+  border-radius: 100%;
+}
+
+.icon .fa {
+  color: #7fa4ff;
+  font-size: 25px;
+  margin-top: 12.5px;
+}
+
+.icon.left {
+  float: left;
+  margin-left: 0px;
+}
+
+.icon.right {
+  float: right;
+  margin-left: 0px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+/** End Footer Styles **/
